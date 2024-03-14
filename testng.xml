@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/home/knoldus/IdeaProjects/GoRest">
+        <classes>
+            <class name="api.tests.UserTests">
+                <methods>
+                    <include name="createUserWithValidInputs"/>
+                    <include name="createUserWithInvalidMail"/>
+                    <include name="createUserWithPreExistEmail"/>
+                    <include name="createUserWithPreExistPayloadAndNewMail"/>
+                    <include name="createUserWithInvalidToken"/>
+                    <include name="updateFieldsWithValidInput"/>
+                    <include name="updateFieldsWithInvalidId"/>
+                    <include name="updateFieldsWithInvalidToken"/>
+                    <include name="updateFieldsWithInvalidData"/>
+                    <include name="getAllUserWithValidURL"/>
+                    <include name="getAllUserWithInvalidCredential"/>
+                    <include name="getExistingUser"/>
+                    <include name="getANonExistingUser"/>
+                    <include name="deleteExistingUser"/>
+                    <include name="deleteANonExistingUser"/>
+                    <include name="deleteUserWithInvalidToken"/>
+                    <include name="deleteUserWithEmptyToken"/>
+                    <include name="deleteUserRequestWithEmptyId"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
